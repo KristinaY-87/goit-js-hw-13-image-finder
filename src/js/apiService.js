@@ -13,7 +13,8 @@ export default {
             
                 this.incrementPage();
                 return hits;
-        })
+            })
+            .catch(error => console.log(error))
     },
 
     get query() {
